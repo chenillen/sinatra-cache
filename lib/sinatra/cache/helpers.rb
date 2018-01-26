@@ -2,7 +2,7 @@
 # @Date:   2018-01-26T11:00:16+08:00
 # @Email:  chenillen@gmail.com
 # @Last modified by:   chenillen
-# @Last modified time: 2018-01-26T12:16:18+08:00
+# @Last modified time: 2018-01-26T12:32:12+08:00
 # @Copyright: Copyright (c) 2017 by Allen C.(@chenillen). All Rights Reserved.
 
 
@@ -409,7 +409,7 @@ module Sinatra
           dirs = dir_structure.split('/')
           if dirs.length >= 2
             new_dirs = []
-            new_dirs << dir
+            new_dirs << dirs[0]
             new_dirs << dirs[1][0..2]
             new_dirs << dirs[1][3..5]
             new_dirs << dirs[1][6..-1]
